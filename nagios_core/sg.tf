@@ -6,7 +6,11 @@ resource "aws_security_group" "ssh" {
     from_port   = 22 
     to_port     = 22 
     protocol    = "tcp" 
+<<<<<<< HEAD
     cidr_blocks = ["0.0.0.0/0"]   
+=======
+    cidr_blocks = ["0.0.0.0/0"] # Change this to your CIDR Block   
+>>>>>>> fcbf80da1871fc3f2b8b8e77ecc3599e08491d45
 
 } 
   egress { 
@@ -25,23 +29,22 @@ resource "aws_security_group" "web" {
     from_port   = 80
     to_port     = 80 
     protocol    = "tcp" 
-    cidr_blocks = ["0.0.0.0/0"]   
+    cidr_blocks = ["0.0.0.0/0"]  # Change this to your CIDR Block
 } 
-ingress { 
+  ingress { 
     from_port   = 443
     to_port     = 443
     protocol    = "tcp" 
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["0.0.0.0/0"]  # Change this to your CIDR Block
 
 }
-ingress { 
+  ingress { 
     from_port   = 8080
     to_port     = 8080
     protocol    = "tcp" 
-    cidr_blocks = ["0.0.0.0/0"]  
+    cidr_blocks = ["0.0.0.0/0"]  # Change this to your CIDR Block
 
 } 
-     
 
   egress { 
     from_port       = 0 
