@@ -45,7 +45,16 @@
       copy:
         content: "{{ mytext }}"
         dest: '/usr/local/nagios/etc/servers/host.cfg'
+
+    - name: Configure nagios conf file
+      lineinfile: 
+        dest: /usr/local/nagios/etc/nagios.cfg
+        regexp: '#cfg_dir=/usr/local/nagios/etc/servers'
+        line: 'cfg_dir=/usr/local/nagios/etc/servers'
     - name: Restart service nagios
       service:
         name: nagios
         state: restarted
+
+    
+    
