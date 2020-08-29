@@ -7,18 +7,19 @@
 
 Nagios Core is the monitoring and alerting engine that serves as the primary application around which hundreds of Nagios projects are built.
 <p align="center">
-Source: www.nagios.org
-</p>
+Source: 
+<a href="https://www.nagios.org/">www.nagios.org</a>
+</p> 
 
 ## What is NRPE? 
 <p align="center">
-  <img width="500" height="250" src="img/NRPE-Diagram.png">
+  <img width="600" height="350" src="img/NRPE-Diagram.png">
 </p>
 
 Nagios Remote Plugin Executor (NRPE) is a Nagios agent that allows remote system monitoring using scripts that are hosted on the remote systems. It allows for monitoring of resources such as disk usage, system load or the number of users currently logged in.
 <p align="center">
 Source: 
-<a href="https://www.nagios.org/">www.nagios.org</a>
+<a href="https://en.wikipedia.org/wiki/Nagios#:~:text=Nagios%20Remote%20Plugin%20Executor%20(NRPE,of%20users%20currently%20logged%20in.">Wiki Page</a>
 </p> 
 
 ## Prerequisities for Setup:
