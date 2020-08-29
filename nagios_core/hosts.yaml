@@ -51,6 +51,15 @@
         dest: /usr/local/nagios/etc/nagios.cfg
         regexp: '#cfg_dir=/usr/local/nagios/etc/servers'
         line: 'cfg_dir=/usr/local/nagios/etc/servers'
+        
+    - name: Insert/Update "Match User" configuration block in /etc/ssh/sshd_config
+      blockinfile:
+        path: /usr/local/nagios/etc/objects/commands.cfg
+        block: |
+          define command{
+          command_name check_nrpe
+          command_line $USER1$/check_nrpe -H $HOSTADDRESS$ -c $ARG1$
+          } 
     - name: Restart service nagios
       service:
         name: nagios
