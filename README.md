@@ -31,12 +31,14 @@ Source:
 ## Folders 
 
 [nagios_core](nagios_core) :
-
 Contains Terraform code to setup Nagios Core server in AWS. 
 
 
 [nagios_agent](nagios_agent)
-
 Contains Ansible Playbook to install and configure NRPE is the hosts that needs to be monitored. 
 
-## Installation 
+## Installation Guide
+
+[nagios_core](nagios_core) - Server Setup
+
+[nagios_agent](nagios_agent) - NRPE Setup
