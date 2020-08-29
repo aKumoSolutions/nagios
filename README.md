@@ -24,9 +24,9 @@ Source:
 
 ## Prerequisities for Setup:
 
-* Access to AWS 
-* Terraform 0.12
-* Ansible
+* [Access to AWS](https://aws.amazon.com/) 
+* [Terraform 0.12](https://www.terraform.io/)
+* [Ansible](https://www.ansible.com/)
 
 ## Folders 
 
