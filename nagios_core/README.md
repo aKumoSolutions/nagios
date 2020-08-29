@@ -1,4 +1,4 @@
-## Installation Guide
+## Setup Guide
 
 ### Step 1: 
 
