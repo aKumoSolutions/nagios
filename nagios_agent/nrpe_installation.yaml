@@ -1,6 +1,6 @@
 ---
   - name: Playbook for configuring nagios client(s)
-    hosts: nagios-agent
+    hosts: all
     remote_user: centos
     become: true
     become_method: sudo 
