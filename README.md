@@ -18,7 +18,7 @@ Source: www.nagios.org
 Nagios Remote Plugin Executor (NRPE) is a Nagios agent that allows remote system monitoring using scripts that are hosted on the remote systems. It allows for monitoring of resources such as disk usage, system load or the number of users currently logged in.
 <p align="center">
 Source: 
-<a href="www.nagios.org">www.nagios.org</a>
+<a href="https://www.nagios.org/">https://www.nagios.org/</a>
 </p> 
 
 ## Prerequisities for Setup:
