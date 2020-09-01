@@ -2,14 +2,14 @@
 - hosts: nagios-server
   remote_user: centos
   become: true
-  become_method: sudo
+  become_method: sudo 
   vars:
     mytext: |
       define host {
       use linux-server
       host_name host1
       alias Apache server host1
-      address 172.31.47.240
+      address <ip-address-of-host1>      
       max_check_attempts 5
       check_period 24x7
       notification_interval 30
@@ -19,7 +19,7 @@
       use linux-server
       host_name host2
       alias Apache server host2
-      address 172.31.46.67
+      address <ip-address-of-host2>
       max_check_attempts 5
       check_period 24x7
       notification_interval 30
