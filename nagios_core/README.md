@@ -33,7 +33,7 @@ Apply Terraform Code
 
 ### Step 4 : Run Ansible Playbook
 
-*Note: This steps assumes the newly created nagios server is added as a managed host under your Ansible. Also it's added to the group "ansible-server". You can modify "hosts" line, based on your Ansible hosts file configuration.*
+*Note: This step assumes the newly created nagios server is added as a managed host under your Ansible. Also it's added to the group "ansible-server". You can modify "hosts" line, based on your Ansible hosts file configuration.*
 
 Edit hosts.yaml file
 
