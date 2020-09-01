@@ -37,6 +37,16 @@ Apply Terraform Code
 
 Edit hosts.yaml file
 
+```vi hosts.yaml```
+
+* Enter IP addresses of hosts that needs to be monitored by Nagios
+* Edit :  line 12, line 22
+* For addition hosts, add a new block under line 27
+
+Run Ansible Playbook 
+
 ```ansible-playbook hosts.yaml```
+
+
 
 For more information on how to add Ansible hosts visit - [Official Documents](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html)

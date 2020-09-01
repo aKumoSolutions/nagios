@@ -5,7 +5,7 @@
     become: true
     become_method: sudo 
     vars:
-      nagios_server: 3.89.8.3
+      nagios_server:        # Enter IP address of Nagios-Server
 
     tasks:
     - name: Install epel-release repository
