@@ -41,4 +41,10 @@ resource "aws_instance" "instance" {
         "sudo service nagios start",                   
         ]
       }
+  provisioner "local-exec" {
+    command = "echo ${aws_instance.instance.private_ip} >> /etc/ansible/nagios_hosts"
+  }
+  tags =  {
+    Name                  = "nagios_demo"
+  }                
 }

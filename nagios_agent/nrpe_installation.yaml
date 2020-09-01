@@ -1,10 +1,11 @@
 ---
   - name: Playbook for configuring nagios client(s)
-    hosts: nagios-client
-    remote_user: root
-
+    hosts: all
+    remote_user: centos
+    become: true
+    become_method: sudo 
     vars:
-      nagios_server: 54.234.79.218
+      nagios_server: 3.89.8.3
 
     tasks:
     - name: Install epel-release repository

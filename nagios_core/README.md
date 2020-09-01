@@ -1,15 +1,20 @@
 ## Setup Guide
 
 ### Step 1: 
+git pull
 
 ### Step 2: 
+Add .tfvars file
 
 ### Step 3 :
+```terrafrom init ```
 
-### Step 4:
+```terraform plan -var-file=file.tfvars```
 
-### Step 5:
+```terraform validate -var-file=file.tfvars```
 
-### Step 6:
+```terraform apply -var-file=file.tfvars```
 
-### Step 7:
+edit hosts.yaml file
+
+```ansible-playbook hosts.yaml```
