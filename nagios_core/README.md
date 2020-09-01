@@ -1,6 +1,6 @@
 ## Setup Guide
 
-### Step 1: 
+### Step 1: Clone Repository
 Clone this repository
 
 ### Step 2: Add .tfvars file
